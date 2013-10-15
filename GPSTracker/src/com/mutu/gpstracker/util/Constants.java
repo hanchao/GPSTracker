@@ -76,7 +76,7 @@ public class Constants
    public static final int UNITS_IMPERIALSURFACE = 6;
    public static final int UNITS_METRICSURFACE = 7;
    public static final String SDDIR_DIR = "SDDIR_DIR";
-   public static final String DEFAULT_EXTERNAL_DIR = "/OpenGPSTracker/";
+   public static final String DEFAULT_EXTERNAL_DIR = "/GPSTracker/";
    public static final String TMPICTUREFILE_SUBPATH = "media_tmp.tmp";
    public static final Uri NAME_URI = Uri.parse("content://" + GPStracking.AUTHORITY + ".string");
    public static final int GOOGLE = 0;
