@@ -52,8 +52,8 @@ public class BreadcrumbsService extends Service implements Observer, ProgressLis
    public static final String OAUTH_TOKEN_SECRET = "breadcrumbs_oauth_secret";
 
    private static final String TAG = "OGT.BreadcrumbsService";
-   public static final String NOTIFY_DATA_SET_CHANGED = "nl.sogeti.android.gpstracker.intent.action.NOTIFY_DATA_SET_CHANGED";
-   public static final String NOTIFY_PROGRESS_CHANGED = "nl.sogeti.android.gpstracker.intent.action.NOTIFY_PROGRESS_CHANGED";
+   public static final String NOTIFY_DATA_SET_CHANGED = "com.mutu.gpstracker.intent.action.NOTIFY_DATA_SET_CHANGED";
+   public static final String NOTIFY_PROGRESS_CHANGED = "com.mutu.gpstracker.intent.action.NOTIFY_PROGRESS_CHANGED";
    public static final String PROGRESS_INDETERMINATE = null;
    public static final String PROGRESS = null;
    public static final String PROGRESS_STATE = null;

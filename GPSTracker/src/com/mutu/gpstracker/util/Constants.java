@@ -64,8 +64,8 @@ public class Constants
    public static final String STOPATUNDOCK = "stopatundock";
    public static final String LOGATPOWERCONNECTED = "logatpowerconnected";
    public static final String STOPATPOWERDISCONNECTED = "stopatpowerdisconnected";
-   public static final String SERVICENAME = "nl.sogeti.android.gpstracker.intent.action.GPSLoggerService";
-   public static final String STREAMBROADCAST = "nl.sogeti.android.gpstracker.intent.action.STREAMBROADCAST";
+   public static final String SERVICENAME = "com.mutu.gpstracker.intent.action.GPSLoggerService";
+   public static final String STREAMBROADCAST = "com.mutu.gpstracker.intent.action.STREAMBROADCAST";
    public static final String UNITS = "units";
    public static final int UNITS_DEFAULT = 0;
    public static final int UNITS_IMPERIAL = 1;
@@ -109,7 +109,7 @@ public class Constants
     * @see #EXTRA_LOGGING_STATE
     */
 
-   public static final String LOGGING_STATE_CHANGED_ACTION = "nl.sogeti.android.gpstracker.LOGGING_STATE_CHANGED";
+   public static final String LOGGING_STATE_CHANGED_ACTION = "com.mutu.gpstracker.LOGGING_STATE_CHANGED";
 
    /**
     * The precision the service is logging on.
@@ -120,7 +120,7 @@ public class Constants
     * @see #LOGGING_GLOBAL
     * @see #LOGGING_CUSTOM
     */
-   public static final String EXTRA_LOGGING_PRECISION = "nl.sogeti.android.gpstracker.EXTRA_LOGGING_PRECISION";
+   public static final String EXTRA_LOGGING_PRECISION = "com.mutu.gpstracker.EXTRA_LOGGING_PRECISION";
 
    /**
     * The state the service is.
@@ -130,7 +130,7 @@ public class Constants
     * @see #PAUSED
     * @see #STOPPED
     */
-   public static final String EXTRA_LOGGING_STATE = "nl.sogeti.android.gpstracker.EXTRA_LOGGING_STATE";
+   public static final String EXTRA_LOGGING_STATE = "com.mutu.gpstracker.EXTRA_LOGGING_STATE";
 
    /**
     * The state of the service is unknown
@@ -237,19 +237,19 @@ public class Constants
    /**
     * A distance in meters
     */
-   public static final String EXTRA_DISTANCE = "nl.sogeti.android.gpstracker.EXTRA_DISTANCE";
+   public static final String EXTRA_DISTANCE = "com.mutu.gpstracker.EXTRA_DISTANCE";
    /**
     * A time period in minutes
     */
-   public static final String EXTRA_TIME = "nl.sogeti.android.gpstracker.EXTRA_TIME";
+   public static final String EXTRA_TIME = "com.mutu.gpstracker.EXTRA_TIME";
    /**
     * The location that pushed beyond the set minimum time or distance
     */
-   public static final String EXTRA_LOCATION = "nl.sogeti.android.gpstracker.EXTRA_LOCATION";
+   public static final String EXTRA_LOCATION = "com.mutu.gpstracker.EXTRA_LOCATION";
    /**
     * The track that is being logged
     */
-   public static final String EXTRA_TRACK = "nl.sogeti.android.gpstracker.EXTRA_TRACK";
+   public static final String EXTRA_TRACK = "com.mutu.gpstracker.EXTRA_TRACK";
    public static final String OSM_PROVIDER = "OSM";
    public static final String GOOGLE_PROVIDER = "GOOGLE";
    public static final String MAPQUEST_PROVIDER = "MAPQUEST";

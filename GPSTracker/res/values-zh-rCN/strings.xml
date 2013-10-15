@@ -18,7 +18,7 @@
     <string name="dialog_tracking_title">追踪控制</string>
 	<string name="dialog_routename_title">命名路线</string>
     <string name="dialog_routename_message">请输入此路线的名称</string>
-    <string name="dialog_routename_default">路线 %1$tY-%2$tm-%3$td %4$tH：%5$tM</string>
+    <string name="dialog_routename_default">足迹 %1$tY-%2$tm-%3$td %4$tH：%5$tM</string>
     <string name="dialog_notrack_title">没有选择路线</string>
     <string name="dialog_notrack_message">在导出之前请选择一个路线</string>
     <string name="dialog_delete_title">删除路线</string>

@@ -148,7 +148,7 @@ public class GPSLoggerService extends Service implements LocationListener
     */
    private static final int START_STICKY = 1;
 
-   public static final String COMMAND = "nl.sogeti.android.gpstracker.extra.COMMAND";
+   public static final String COMMAND = "com.mutu.gpstracker.extra.COMMAND";
    public static final int EXTRA_COMMAND_START = 0;
    public static final int EXTRA_COMMAND_PAUSE = 1;
    public static final int EXTRA_COMMAND_RESUME = 2;
@@ -735,7 +735,7 @@ public class GPSLoggerService extends Service implements LocationListener
    /**
     * (non-Javadoc)
     * 
-    * @see nl.sogeti.android.gpstracker.IGPSLoggerService#getLoggingState()
+    * @see com.mutu.gpstracker.IGPSLoggerService#getLoggingState()
     */
    protected boolean isLogging()
    {
@@ -776,7 +776,7 @@ public class GPSLoggerService extends Service implements LocationListener
    /**
     * (non-Javadoc)
     * 
-    * @see nl.sogeti.android.gpstracker.IGPSLoggerService#startLogging()
+    * @see com.mutu.gpstracker.IGPSLoggerService#startLogging()
     */
    public synchronized void startLogging()
    {
@@ -847,7 +847,7 @@ public class GPSLoggerService extends Service implements LocationListener
    /**
     * (non-Javadoc)
     * 
-    * @see nl.sogeti.android.gpstracker.IGPSLoggerService#stopLogging()
+    * @see com.mutu.gpstracker.IGPSLoggerService#stopLogging()
     */
    public synchronized void stopLogging()
    {
@@ -897,7 +897,7 @@ public class GPSLoggerService extends Service implements LocationListener
    /**
     * (non-Javadoc)
     * 
-    * @see nl.sogeti.android.gpstracker.IGPSLoggerService#storeDerivedDataSource(java.lang.String)
+    * @see com.mutu.gpstracker.IGPSLoggerService#storeDerivedDataSource(java.lang.String)
     */
    public void storeDerivedDataSource(String sourceName)
    {

@@ -41,9 +41,9 @@ import android.provider.BaseColumns;
  */
 public final class GPStracking
 {
-   /** The authority of this provider: nl.sogeti.android.gpstracker */
-   public static final String AUTHORITY = "nl.sogeti.android.gpstracker";
-   /** The content:// style Uri for this provider, content://nl.sogeti.android.gpstracker */
+   /** The authority of this provider: com.mutu.gpstracker */
+   public static final String AUTHORITY = "com.mutu.gpstracker";
+   /** The content:// style Uri for this provider, content://com.mutu.gpstracker */
    public static final Uri CONTENT_URI = Uri.parse( "content://" + GPStracking.AUTHORITY );
    /** The name of the database file */
    static final String DATABASE_NAME = "GPSLOG.db";
@@ -58,10 +58,10 @@ public final class GPStracking
    public static final class Tracks extends TracksColumns implements android.provider.BaseColumns
    {
       /** The MIME type of a CONTENT_URI subdirectory of a single track. */
-      public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.nl.sogeti.android.track";
+      public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.com.mutu.track";
       /** The MIME type of CONTENT_URI providing a directory of tracks. */
-      public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.nl.sogeti.android.track";
-      /** The content:// style URL for this provider, content://nl.sogeti.android.gpstracker/tracks */
+      public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.com.mutu.track";
+      /** The content:// style URL for this provider, content://com.mutu.gpstracker/tracks */
       public static final Uri CONTENT_URI = Uri.parse( "content://" + GPStracking.AUTHORITY + "/" + Tracks.TABLE );
 
       /** The name of this table */
@@ -82,9 +82,9 @@ public final class GPStracking
    {
 
       /** The MIME type of a CONTENT_URI subdirectory of a single segment. */
-      public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.nl.sogeti.android.segment";
+      public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.com.mutu.segment";
       /** The MIME type of CONTENT_URI providing a directory of segments. */
-      public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.nl.sogeti.android.segment";
+      public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.com.mutu.segment";
 
       /** The name of this table, segments */
       public static final String TABLE = "segments";
@@ -103,9 +103,9 @@ public final class GPStracking
    {
 
       /** The MIME type of a CONTENT_URI subdirectory of a single waypoint. */
-      public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.nl.sogeti.android.waypoint";
+      public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.com.mutu.waypoint";
       /** The MIME type of CONTENT_URI providing a directory of waypoints. */
-      public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.nl.sogeti.android.waypoint";
+      public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.com.mutu.waypoint";
       
       /** The name of this table, waypoints */
       public static final String TABLE = "waypoints";
@@ -130,7 +130,7 @@ public final class GPStracking
 
       /**
        * Build a waypoint Uri like:
-       * content://nl.sogeti.android.gpstracker/tracks/2/segments/1/waypoints/52
+       * content://com.mutu.gpstracker/tracks/2/segments/1/waypoints/52
        * using the provided identifiers
        * 
        * @param trackId
@@ -161,9 +161,9 @@ public final class GPStracking
    {
 
       /** The MIME type of a CONTENT_URI subdirectory of a single media entry. */
-      public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.nl.sogeti.android.media";
+      public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.com.mutu.media";
       /** The MIME type of CONTENT_URI providing a directory of media entry. */
-      public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.nl.sogeti.android.media";
+      public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.com.mutu.media";
       
       /** The name of this table */
       public static final String TABLE = "media";
@@ -186,9 +186,9 @@ public final class GPStracking
    {
 
       /** The MIME type of a CONTENT_URI subdirectory of a single metadata entry. */
-      public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.nl.sogeti.android.metadata";
+      public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.com.mutu.metadata";
       /** The MIME type of CONTENT_URI providing a directory of media entry. */
-      public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.nl.sogeti.android.metadata";
+      public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.com.mutu.metadata";
       
       /** The name of this table */
       public static final String TABLE = "metadata";
@@ -201,7 +201,7 @@ public final class GPStracking
       "," + " " + MetaDataColumns.VALUE    + " " + MetaDataColumns.VALUE_TYPE + 
       ");";
       /**
-       * content://nl.sogeti.android.gpstracker/metadata
+       * content://com.mutu.gpstracker/metadata
        */
       public static final Uri CONTENT_URI = Uri.parse( "content://" + GPStracking.AUTHORITY + "/" + MetaData.TABLE );
    }
