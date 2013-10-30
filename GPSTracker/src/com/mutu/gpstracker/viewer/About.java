@@ -57,12 +57,12 @@ public class About extends Activity
       {
          version.setText("");
       }
-      WebView license = (WebView) findViewById(R.id.license_body);
-      license.loadUrl("file:///android_asset/license_short.html");
-      WebView contributions = (WebView) findViewById(R.id.contribution_body);
-      contributions.loadUrl("file:///android_asset/contributions.html");
-      WebView notice = (WebView) findViewById(R.id.notices_body);
-      notice.loadUrl("file:///android_asset/notices.html");
+//      WebView license = (WebView) findViewById(R.id.license_body);
+//      license.loadUrl("file:///android_asset/license_short.html");
+//      WebView contributions = (WebView) findViewById(R.id.contribution_body);
+//      contributions.loadUrl("file:///android_asset/contributions.html");
+//      WebView notice = (WebView) findViewById(R.id.notices_body);
+//      notice.loadUrl("file:///android_asset/notices.html");
    }
 
    public static String readRawTextFile(Context ctx, int resId)

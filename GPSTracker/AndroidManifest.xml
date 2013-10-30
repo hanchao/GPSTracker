@@ -144,6 +144,10 @@
             android:label="@string/menu_statistics" >
         </activity>
         <activity
+            android:name="com.mutu.gpstracker.viewer.About"
+            android:label="@string/menu_about" >
+        </activity>
+        <activity
             android:name="com.mutu.gpstracker.actions.ShareTrack"
             android:exported="false"
             android:label="@string/share_track"
@@ -173,7 +177,6 @@
                     android:scheme="x-oauthflow-opengpstracker" />
             </intent-filter>
         </activity>
-
         <service
             android:name="com.mutu.gpstracker.logger.GPSLoggerService"
             android:enabled="true"

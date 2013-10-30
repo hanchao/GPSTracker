@@ -112,7 +112,7 @@ public class LoggerMapHelper
    private static final int MENU_LAYERS = 6;
    private static final int MENU_NOTE = 7;
    private static final int MENU_SHARE = 13;
-   private static final int MENU_CONTRIB = 14;
+//   private static final int MENU_CONTRIB = 14;
    private static final int DIALOG_NOTRACK = 24;
    private static final int DIALOG_LAYERS = 31;
    private static final int DIALOG_URIS = 34;
@@ -752,7 +752,7 @@ public class LoggerMapHelper
       menu.add(ContextMenu.NONE, MENU_TRACKLIST, ContextMenu.NONE, R.string.menu_tracklist).setIcon(R.drawable.ic_menu_show_list).setAlphabeticShortcut('P');
       menu.add(ContextMenu.NONE, MENU_SETTINGS, ContextMenu.NONE, R.string.menu_settings).setIcon(R.drawable.ic_menu_preferences).setAlphabeticShortcut('C');
       menu.add(ContextMenu.NONE, MENU_ABOUT, ContextMenu.NONE, R.string.menu_about).setIcon(R.drawable.ic_menu_info_details).setAlphabeticShortcut('A');
-      menu.add(ContextMenu.NONE, MENU_CONTRIB, ContextMenu.NONE, R.string.menu_contrib).setIcon(R.drawable.ic_menu_allfriends);
+//      menu.add(ContextMenu.NONE, MENU_CONTRIB, ContextMenu.NONE, R.string.menu_contrib).setIcon(R.drawable.ic_menu_allfriends);
    }
 
    public void onPrepareOptionsMenu(Menu menu)
@@ -827,8 +827,8 @@ public class LoggerMapHelper
             mLoggerMap.getActivity().startActivityForResult(Intent.createChooser(intent, mLoggerMap.getActivity().getString(R.string.share_track)), MENU_SHARE);
             handled = true;
             break;
-         case MENU_CONTRIB:
-            mLoggerMap.getActivity().showDialog(DIALOG_CONTRIB);
+//         case MENU_CONTRIB:
+//            mLoggerMap.getActivity().showDialog(DIALOG_CONTRIB);
          default:
             handled = false;
             break;
